@@ -1,0 +1,54 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn install
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.17.3
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/parcel: ETIMEDOUT
+      at Timeout._onTimeout (/usr/local/lib/node_modules/yarn/lib/cli.js:141322:19)
+      at listOnTimeout (internal/timers.js:557:17)
+      at processTimers (internal/timers.js:500:7)
+
+npm manifest: 
+  {
+    "name": "little-title",
+    "version": "0.0.1",
+    "description": "200实现的精简react",
+    "license": "MIT",
+    "repository": "github:yujingwyh/little-title",
+    "bugs": "https://github.com/yujingwyh/little-title/issues",
+    "keywords": [
+      "react",
+      "源码",
+      "原理"
+    ],
+    "author": {
+      "name": "yujingwyh",
+      "email": "yujingwyh@163.com"
+    },
+    "scripts": {
+      "demo1": "npx parcel ./demo/demo1/index.html --open --no-cache",
+      "demo2": "npx parcel ./demo/demo2/index.html --open --no-cache",
+      "demo3": "npx parcel ./demo/demo3/index.html --open --no-cache",
+      "demo4": "npx parcel ./demo/demo4/index.html --open --no-cache"
+    },
+    "devDependencies": {
+      "parcel": "^2.0.0-rc.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
