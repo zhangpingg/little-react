@@ -9,6 +9,7 @@ const style = {
     color: "#00f"
 }
 
+// 字符型元素，通过打包编译(createElement)为虚拟DOM
 const app = <div className={'action'} id={'dome1'} onClick={onClick} style={style}>
     content
 </div>;

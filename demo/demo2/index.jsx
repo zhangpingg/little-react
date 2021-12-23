@@ -1,20 +1,16 @@
 import React from '../../src/react'
 import ReactDom from '../../src/react-dom'
 
-function Children(props) {
-    return <div>
-        {props.name}{props.children}
-    </div>
+// 函数组件，通过打包编译(createElement)为虚拟DOM
+const Children = (props) => {
+    return <div>{props.name}{props.children}</div>
 }
-
-function App() {
-    return <Children name={1}>
-        2
-    </Children>
+const App = () => {
+    return <Children name={1}>2</Children>
 }
 
 ReactDom.render(
-    <App/>,
+    <App />,
     document.getElementById('root')
 )
 

@@ -21,12 +21,12 @@ export function diff(newVNode, oldVNode) {
             }
             newVNode._component.componentWillMount && newVNode._component.componentWillMount();
         }
+        // setState 时执行
         if (newVNode._component._nextState !== null) {
             newVNode._component.state = newVNode._component._nextState;
             newVNode._component._nextState = null;
         }
-
-        newVNode._component._vNode = newVNode;
+        newVNode._component._vNode = newVNode;                  // 首次渲染将对应的虚拟节点保存到实例中
         newVNode._currentDom = newVNode._parentDom;
         newProps.children = newVNode._component.render(newProps);
         diffChildren(newVNode, oldVNode)
