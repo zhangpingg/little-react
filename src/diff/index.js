@@ -1,8 +1,8 @@
 import React from '../react'
-
 import {diffChildren} from './children'
 import {diffProps} from "./props";
 
+// 处理虚拟节点
 export function diff(newVNode, oldVNode) {
     const newType = newVNode.type;
     const newProps = newVNode.props;
