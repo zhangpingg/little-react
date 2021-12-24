@@ -1,11 +1,5 @@
 # little-react
 
-精简的react实现，除过注释和空行外基本200行。当然不可能全覆盖react的所有功能，主要实现了渲染这块，帮助大家理解react渲染原理
-
-## 文章
-https://zhuanlan.zhihu.com/p/408340406
-
-
 ## 如何使用
 
 ### 安装依赖
